@@ -66,6 +66,8 @@ biases = {
 # print(weights['in'])
 # ----------------------------------lstm定义
 # print(X)
+
+#数据理顺清楚
 def lstm(batch):
     w_in = weights['in']  # 选取输入的权重
 # <tf.Variable 'Variable:0' shape=(1, 10) dtype=float32_ref>
