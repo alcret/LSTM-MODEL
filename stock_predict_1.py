@@ -80,7 +80,7 @@ def train_lstm():
                 end=start+batch_size
 
                 if step%10==0:
-                    print("迭代次数:",i," 损失函数:",loss_)
+                    print("迭代次数:",i,'步数',step," 损失函数:",loss_)
                     print("保存",saver.save(sess,'test\\modle.ckpt'))
                     #I run the code in windows 10,so use  'model_save1\\modle.ckpt'
                     #if you run it in Linux,please use  'model_save1/modle.ckpt'
