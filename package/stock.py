@@ -20,7 +20,7 @@ normalize_data = normalize_data[:, np.newaxis]
 
 # 常数设置
 time_step = 20  # 时间步
-lr = 0.0025
+lr = 0.00000001
 batch_size = 60
 input_size = 1
 output_size = 1
@@ -148,4 +148,3 @@ def prediction():
 
 if __name__ == '__main__':
     prediction()
-
