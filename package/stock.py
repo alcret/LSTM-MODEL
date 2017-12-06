@@ -8,7 +8,7 @@ f = open('dataset_1.csv')
 df = pd.read_csv(f)
 data = np.array(df['max'])
 data = data[::-1]
-
+# print(data)
 # plt.figure()
 # plt.plot(data)
 # plt.show()
@@ -35,7 +35,7 @@ for i in range(len(normalize_data) - time_step - 1):
     train_x.append(x.tolist())
     train_y.append(y.tolist())
 # train_y:[-0.5022433058986824], [-0.49971611355921974], [-0.4876742306581236], [-0.48609945035704044], [-0.4866275203981222], [-0.47499111984999953], [-0.46684375350188134],
-
+# print(train_x)
 # ----------------------------------------------定义神经网络静态变量
 # 定义每批次的输入
 X = tf.placeholder(tf.float32, [None, time_step, input_size])
@@ -65,7 +65,7 @@ biases = {
 # biases = {'in': <tf.Variable 'Variable_2:0' shape=(10,) dtype=float32_ref>, 'out': <tf.Variable 'Variable_3:0' shape=(1,) dtype=float32_ref>}
 # print(biases)
 # print(weights['in'])
-# ----------------------------------lstm定义
+# ----------------------------------lstm图定义
 # print(X)
 
 def lstm(batch):
@@ -76,9 +76,10 @@ def lstm(batch):
     input = tf.reshape(X, [-1, input_size])  # 隐藏层输入
     # input = Tensor("Reshape:0", shape=(?, 1), dtype=float32)
     input_rnn = tf.matmul(input, w_in) + b_in  # 计算隐藏层
+    # print(tf.matmul(input,w_in))
     # inpur_rnn = Tensor("add:0", shape=(?, 10), dtype=float32)
     input_rnn = tf.reshape(input_rnn, [-1, time_step, rnn_unit])  # 隐藏层变形 成三维张量
-    cell = tf.nn.rnn_cell.BasicLSTMCell(rnn_unit)
+    cell = tf.nn.rnn_cell.BasicLSTMCell(rnn_unit,1)
     init_state = cell.zero_state(batch, dtype=tf.float32)  # 将初始的值放到cell中
     output_rnn, final_state = tf.nn.dynamic_rnn(cell, input_rnn, initial_state=init_state, dtype=tf.float32)  # 输出层计算
     output = tf.reshape(output_rnn, [-1, rnn_unit])  # 输出层变形为二维张量
@@ -89,7 +90,7 @@ def lstm(batch):
     return pred, final_state
 
 
-# lstm(batch_size)
+lstm(batch_size)
 
 # ----------------------------训练模型
 def train_lstm():
@@ -102,7 +103,7 @@ def train_lstm():
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
 
-        for i in range(100):  # 迭代一百次训练
+        for i in range(10):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
@@ -144,7 +145,7 @@ def prediction():
         plt.show()
 
 
-# prediction()
+prediction()
 
-if __name__ == '__main__':
-    prediction()
+# if __name__ == '__main__':
+#     prediction()

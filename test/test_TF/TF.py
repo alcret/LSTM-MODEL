@@ -1,4 +1,5 @@
 import tensorflow as tf
+import numpy as np
 
 a = tf.constant([[1,2,3,4,5,6],[1,2,3,4,5,6]],shape=[2,6],name='test')
 # print(a)
@@ -20,3 +21,6 @@ g = tf.constant([[0],[1],[2],[3],[4],[5]])
 # shape=(10, 1) * shape=(1, 10)
 
 h = tf.ones([1,10])
+
+
+print(np.sum([[0,1],[0,5]],axis=1))
