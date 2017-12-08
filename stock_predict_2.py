@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 rnn_unit=10       #隐层数量
-input_size=7
-output_size=1
+input_size=7      #输入batch
+output_size=1     #输出batch
 lr=0.0006         #学习率
 #——————————————————导入数据——————————————————————
 f=open('dataset_2.csv')
-df=pd.read_csv(f)     #读入股票数据
+df=pd.read_csv(f)           #读入股票数据
 data=df.iloc[:,2:10].values  #取第3-10列
 
 
