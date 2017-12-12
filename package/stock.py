@@ -11,8 +11,6 @@ data = np.array(df['max'])  #将股票的最大值放到numpy数组中
 data = data[::-1]           #将data进行倒序
 #倒序以后的data形式
 # [   99.98   104.39   109.13 ...,  3495.7   3503.65  3455.55]
-
-# print(data)
 # plt.figure()
 # plt.rcParams['font.sans-serif']=['SimHei']   #用来正常显示中文标签
 # plt.rcParams['axes.unicode_minus']=False     #若存在负号此选项可以用来正常显示负号
@@ -22,17 +20,16 @@ data = data[::-1]           #将data进行倒序
 
 normalize_data = (data - np.mean(data)) / np.std(data)   #均值归一化操作（标准化）
 #np.mean()计算沿指定轴的平均值       np.std() 计算标准差
-# print(normalize_data)
 normalize_data = normalize_data[:,np.newaxis]  #增加一个新的轴(相当于增加一个维度)
-# print(normalize_data)
 
 # 常数设置
 time_step = 20  # 时间步
-lr = 0.00006  #学习率
+lr = 0.0006  #学习率
 batch_size = 60 #每一批次训练的数量
 input_size = 1  #输入维度
 output_size = 1 #输出维度
 rnn_unit = 10  # 隐藏层单元
+module_file = "train\\model.ckpt"
 
 train_x, train_y = [], []   #训练集定义
 
@@ -46,11 +43,9 @@ for i in range(len(normalize_data) - time_step - 1):
 # print(normalize_data[0:20])
 # train_y:[-0.5022433058986824], [-0.49971611355921974], [-0.4876742306581236], [-0.48609945035704044], [-0.4866275203981222], [-0.47499111984999953], [-0.46684375350188134],
 # shape[-1,time_step,input_size]
-# print(train_x)
 # ----------------------------------------------定义神经网络静态变量
 # 定义每批次的输入
 X = tf.placeholder(tf.float32, [None, time_step, input_size])
-# print(X)
 # 格式[[[1],[1],[1]...20],[[1],[1],[1]...20],[[1],[1],[1]...20]......]
 # print(tf.reshape(X,[-1,input_size]))
 # 定义每批次的输入标签
@@ -84,7 +79,6 @@ def lstm(batch):
     input = tf.reshape(X, [-1, input_size])  # 将每批次输入的X进行降维 X[None,20,1] ---> [-1,1]
     # input = Tensor("Reshape:0", shape=(?, 1), dtype=float32)
     input_rnn = tf.matmul(input, w_in) + b_in  # 计算隐藏层    shape [-1,10]+[10,]
-    # print(tf.matmul(input,w_in))
     # inpur_rnn = Tensor("add:0", shape=(?, 10), dtype=float32)
     input_rnn = tf.reshape(input_rnn, [-1, time_step, rnn_unit])  # 隐藏层变形 成三维张量(升维)
     cell = tf.nn.rnn_cell.BasicLSTMCell(rnn_unit,1)
@@ -108,10 +102,9 @@ def lstm(batch):
     # 返回：（outputs, states）:output，[batch_size, max_time, num_units]如果time_major=False。 [max_time,batch_size,num_units]如果time_major=True。states:[batch_size, 2*len(cells)]或[batch_size,s]
     # outputs输出的是最上面一层的输出，states保存的是最后一个时间输出的states
     output = tf.reshape(output_rnn, [-1, rnn_unit])  # 输出层变形为二维张量（降维）
-    w_out = weights['out']  # 标记的权重
-    b_out = biases['out']  # 标记的偏执量
-    pred = tf.matmul(output, w_out) + b_out  # 输出预测值
-    # print(input)
+    w_out = weights['out']  # 最后一层权重
+    b_out = biases['out']  # 最后一层偏执量
+    pred = tf.matmul(output, w_out) + b_out  # 输出
     return pred, final_state
 #pred.shape[-1,1]
 
@@ -121,8 +114,7 @@ def lstm(batch):
 def train_lstm():
     global batch_size  # 为函数外的变量赋值需要global关键字
     with tf.variable_scope("sec_lstm") as scope:    #上下文管理器，对于创建变量的操作，true时为共享变量  tf.AUTO_REUSE
-        #TensorFlow支持两种共享变量方式
-        pred, _ = lstm(batch_size)
+        pred,_ = lstm(batch_size)
     loss = tf.reduce_mean(tf.square(tf.reshape(pred, [-1]) - tf.reshape(Y, [-1])))  # 代价函数,梯度下降法，类似欧几里德距离算法
     train_op = tf.train.AdamOptimizer(lr).minimize(loss)    #此函数是Adam优化算法：是一个寻找全局最优点的优化算法，引入了二次方梯度校正。相比于基础SGD算法，1.不容易陷于局部优点。2.速度更快
     #minimize(loss,global_step=None,var_list=None,gate_gradients=GATE_OP,aggregation_method=None,colocate_gradients_with_ops=False,name=None,grad_loss=None)
@@ -137,7 +129,7 @@ def train_lstm():
     saver = tf.train.Saver(tf.global_variables())
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())   #初始化
-        for i in range(10):  # 迭代一百次训练
+        for i in range(1):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
@@ -146,8 +138,8 @@ def train_lstm():
                 start += batch_size
                 end = start + batch_size
                 if step % 10 == 0:
-                    print("训练次数:", i, "脚步", step, " 损失函数:", loss_)
-                    print("保存", saver.save(sess, 'train\\model.ckpt'))
+                    print("训练次数:", i, "脚步", step, "损失函数:", loss_)
+                    print("保存", saver.save(sess, module_file))
                 step += 1
         print("训练结束")
 
@@ -157,10 +149,11 @@ def train_lstm():
 # 预测模型
 def prediction():
     with tf.variable_scope("sec_lstm", reuse=True):
-        pred, _ = lstm(1)
+        pred,_ = lstm(1)  #预测时只输入[1,time_step,input_size]的测试数据
     saver = tf.train.Saver(tf.global_variables())
     with tf.Session() as sess:
-        saver.restore(sess, "train\\modle.ckpt")
+        # module_file = tf.train.latest_checkpoint(module_file)
+        saver.restore(sess,module_file)
 
         # 训练集最后一行测试
         prev_seq = train_x[-1]
@@ -168,7 +161,7 @@ def prediction():
         for i in range(100):
             next_seq = sess.run(pred, feed_dict={X: [prev_seq]})
             predict.append(next_seq[-1])
-            prev_seq = np.vstack((prev_seq[1:], next_seq[-1]))
+            prev_seq = np.vstack((prev_seq[1:], next_seq[-1]))  #每次得到最后一个时间步的预测结果，与之前的数据加在一起，形成新的测试样本
 
         plt.figure()
         plt.plot(list(range(len(normalize_data))), normalize_data, color='r')
