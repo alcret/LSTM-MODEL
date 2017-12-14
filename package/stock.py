@@ -11,12 +11,12 @@ data = np.array(df['max'])  #将股票的最大值放到numpy数组中
 data = data[::-1]           #将data进行倒序
 #倒序以后的data形式
 # [   99.98   104.39   109.13 ...,  3495.7   3503.65  3455.55]
-# plt.figure()
-# plt.rcParams['font.sans-serif']=['SimHei']   #用来正常显示中文标签
-# plt.rcParams['axes.unicode_minus']=False     #若存在负号此选项可以用来正常显示负号
-# plt.title('股票最大值')   #在2.x版本中需要加u，3.x中不需要
-# plt.plot(data)
-# plt.show()
+plt.figure()
+plt.rcParams['font.sans-serif']=['SimHei']   #用来正常显示中文标签
+plt.rcParams['axes.unicode_minus']=False     #若存在负号此选项可以用来正常显示负号
+plt.title('股票最大值')   #在2.x版本中需要加u，3.x中不需要
+plt.plot(data)
+plt.show()
 
 normalize_data = (data - np.mean(data)) / np.std(data)   #均值归一化操作（标准化）
 #np.mean()计算沿指定轴的平均值       np.std() 计算标准差
@@ -167,7 +167,6 @@ def prediction():
         plt.plot(list(range(len(normalize_data))), normalize_data, color='r')
         plt.plot(list(range(len(normalize_data), len(normalize_data) + len(predict))), predict, color='b')
         plt.show()
-
 
 # prediction()
 
