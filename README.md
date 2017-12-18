@@ -58,3 +58,6 @@ TensorFlow模型会保存在后缀为.ckpt的文件中，由于TensorFlow会将�
 
 $lim_{x \to +{\infty}} (1 + \frac {1} {x}) ^ x = e$
 
+
+
+

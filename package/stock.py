@@ -29,12 +29,13 @@ batch_size = 60 #每一批次训练的数量
 input_size = 1  #输入维度
 output_size = 1 #输出维度
 rnn_unit = 10  # 隐藏层单元
-module_file = "train\\model.ckpt"
+module_file = "train\\ckpt"
 
 train_x, train_y = [], []   #训练集定义
 
 # 构造训练集
 # normalize_data 长度为6111 ->遍历6090
+print(len(normalize_data))
 for i in range(len(normalize_data) - time_step - 1):
     x = normalize_data[i:i + time_step]
     y = normalize_data[i + 1:i + 1 + time_step]
@@ -170,6 +171,6 @@ def prediction():
 
 # prediction()
 
-if __name__ == '__main__':
-    train_lstm()
-    prediction()
+# if __name__ == '__main__':
+    # train_lstm()
+    # prediction()
