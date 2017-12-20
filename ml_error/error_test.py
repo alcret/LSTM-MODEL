@@ -3,19 +3,24 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import pymysql
 
-f = open('bdf_ml_warningschedule.csv')
-df = pd.read_csv(f)
+db = pymysql.connect("172.16.1.159","hadoop","hadoop","dl_iot_bd_tianjin")
+cursor = db.cursor()
+df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=118",con=db)
+db.close()
+
+
 data = np.array(df['dl_errorfirerate'])
 
 data = data[::-1]
 
-# plt.figure()
-# plt.rcParams['font.sans-serif']=['SimHei']
-# plt.rcParams['axes.unicode_minus']=False
-# plt.title('误报比率')
-# plt.plot(data)
-# plt.show()
+plt.figure()
+plt.rcParams['font.sans-serif']=['SimHei']
+plt.rcParams['axes.unicode_minus']=False
+plt.title('误报比率')
+plt.plot(data)
+plt.show()
 
 
 normalize_data= (data - np.mean(data)) / np.std(data)
@@ -32,7 +37,7 @@ module_file = "train\\model.ckpt"
 
 train_x,train_y = [],[]
 
-print(len(normalize_data))
+# print(len(normalize_data))
 
 for i in range(len(normalize_data) -time_step - 1):
     x = normalize_data[i:i+time_step]
@@ -81,7 +86,7 @@ def train_lstm():
     saver = tf.train.Saver(tf.global_variables())
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())   #初始化
-        for i in range(100):  # 迭代一百次训练
+        for i in range(10):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
