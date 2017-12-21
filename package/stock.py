@@ -11,16 +11,20 @@ data = np.array(df['max'])  #将股票的最大值放到numpy数组中
 data = data[::-1]           #将data进行倒序
 #倒序以后的data形式
 # [   99.98   104.39   109.13 ...,  3495.7   3503.65  3455.55]
-plt.figure()
-plt.rcParams['font.sans-serif']=['SimHei']   #用来正常显示中文标签
-plt.rcParams['axes.unicode_minus']=False     #若存在负号此选项可以用来正常显示负号
-plt.title('股票最大值')   #在2.x版本中需要加u，3.x中不需要
-plt.plot(data)
-plt.show()
+# plt.figure()
+# plt.rcParams['font.sans-serif']=['SimHei']   #用来正常显示中文标签
+# plt.rcParams['axes.unicode_minus']=False     #若存在负号此选项可以用来正常显示负号
+# plt.title('股票最大值')   #在2.x版本中需要加u，3.x中不需要
+# plt.plot(data)
+# plt.show()
+
+# print(np.mean(np.max(data)-np.min(data)))
 
 normalize_data = (data - np.mean(data)) / np.std(data)   #均值归一化操作（标准化）
 #np.mean()计算沿指定轴的平均值       np.std() 计算标准差
+# print(normalize_data)
 normalize_data = normalize_data[:,np.newaxis]  #增加一个新的轴(相当于增加一个维度)
+# print(normalize_data)
 
 # 常数设置
 time_step = 20  # 时间步
@@ -35,7 +39,7 @@ train_x, train_y = [], []   #训练集定义
 
 # 构造训练集
 # normalize_data 长度为6111 ->遍历6090
-print(len(normalize_data))
+# print(len(normalize_data))
 for i in range(len(normalize_data) - time_step - 1):
     x = normalize_data[i:i + time_step]
     y = normalize_data[i + 1:i + 1 + time_step]
@@ -56,20 +60,19 @@ Y = tf.placeholder(tf.float32, [None, time_step, output_size])
 
 # 权重
 weights = {
-    'in': tf.Variable(tf.random_normal([input_size, rnn_unit])),
-    'out': tf.Variable(tf.random_normal([rnn_unit, 1]))
+    'in': tf.Variable(tf.random_normal([input_size, rnn_unit]),name='weitht_in'),
+    'out': tf.Variable(tf.random_normal([rnn_unit, 1]),name='weight_out')
 }
 # weigths = {'in': <tf.Variable 'Variable:0' shape=(1, 10) dtype=float32_ref>, 'out': <tf.Variable 'Variable_1:0' shape=(10, 1) dtype=float32_ref>}
 # print(tf.random_normal([input_size,rnn_unit]))
 # 偏执单元
 biases = {
-    'in': tf.Variable(tf.constant(0.1, shape=[rnn_unit, ])),
-    'out': tf.Variable(tf.constant(0.1, shape=[1, ]))
+    'in': tf.Variable(tf.constant(0.1, shape=[rnn_unit,]),name='biases_in'),
+    'out': tf.Variable(tf.constant(0.1, shape=[1, ]),name='biases_out')
 }
 # biases = {'in': <tf.Variable 'Variable_2:0' shape=(10,) dtype=float32_ref>, 'out': <tf.Variable 'Variable_3:0' shape=(1,) dtype=float32_ref>}
 # print(biases)
 # print(weights['in'])
-
 
 # ----------------------------------lstm图定义
 def lstm(batch):
@@ -142,10 +145,13 @@ def train_lstm():
                     print("训练次数:", i, "脚步", step, "损失函数:", loss_)
                     print("保存", saver.save(sess, module_file))
                 step += 1
+        writer = tf.summary.FileWriter(
+            "C:/Users/wilbert/PycharmProjects/LSTM-MODEL/for_simple_test/test/path/to/log",
+            tf.get_default_graph())
         print("训练结束")
 
 
-# train_lstm()
+train_lstm()
 # ----------------------------------------------------------------------------------------------------------------------
 # 预测模型
 def prediction():
@@ -169,7 +175,7 @@ def prediction():
         plt.plot(list(range(len(normalize_data), len(normalize_data) + len(predict))), predict, color='b')
         plt.show()
 
-# prediction()
+prediction()
 
 # if __name__ == '__main__':
     # train_lstm()
