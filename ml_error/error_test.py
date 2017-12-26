@@ -4,12 +4,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import pymysql
+from timeit import Timer
 
-db = pymysql.connect("172.16.1.159","hadoop","hadoop","dl_iot_bd_tianjin")
-# cursor = db.cursor()
-df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127",con=db)
-db.close()
+def DBRead():
+# ISOTIMEFORMAT='%Y-%m-%d %X'
+# times=time.strftime(ISOTIMEFORMAT, time.localtime())
+    print('数据读取中')
+    try:
+        DB = pymysql.connect("172.16.1.159","hadoop","hadoop","dl_iot_bd_tianjin")
+      # cursor = DB.cursor()
+        df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127",con=DB)
+        DB.close()
+    except Exception: print('数据库读取失败')
+# t1 = Timer("DB","from __main__ import test1")
+# print(t1)
+    return df;
 
+df=DBRead()
+t1 = Timer("DBRead()","from __main__ import DBRead")
+print('读取数据花费时间：',t1.timeit(0))
 data = np.array(df['dl_errorfirerate'])
 
 data = data[::-1]
@@ -29,7 +42,7 @@ time_step = 20
 lr = 0.06
 input_size = 1
 output_size = 1
-batch_size = 10
+batch_size = 60
 rnn_unit = 10
 module_file = "train\\model.ckpt"
 
@@ -55,7 +68,6 @@ with tf.name_scope("weightAndbiases"):
         'in': tf.Variable(tf.constant(0.1, shape=[rnn_unit, ]),name='biases_in'),
         'out': tf.Variable(tf.constant(0.1, shape=[1, ]),name='biases_out')
         }
-
 
 def lstm(batch):
     w_in = weights['in']  # 选取输入的权重
@@ -102,7 +114,6 @@ def train_lstm():
 
 train_lstm()
 
-
 def prediction():
     with tf.variable_scope("sec_lstm", reuse=True):
         pred,_ = lstm(1)  #预测时只输入[1,time_step,input_size]的测试数据
@@ -128,5 +139,5 @@ def prediction():
         for x in predict:
             predicts.append(x * np.std(data) + np.mean(data))
 
-        print(data - predicts)
+        print(predicts)
 prediction()

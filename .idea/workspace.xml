@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c19a4510-fba7-416e-8d55-3dcf485b37ce" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/ML_Bo/4/prac/4.0.sqrt.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ML_Bo/4/prac/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ML_Bo/4/source/4.0.sqrt.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ML_Bo/4/source/4.1.intro.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ML_Bo/4/source/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/for_simple_test/test/fire_car/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/for_simple_test/test/fire_car/fire_car.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/for_simple_test/test/const.py" afterPath="$PROJECT_DIR$/for_simple_test/test/const.py" />
       <change beforePath="$PROJECT_DIR$/ml_error/error_test.py" afterPath="$PROJECT_DIR$/ml_error/error_test.py" />
-      <change beforePath="$PROJECT_DIR$/package/stock.py" afterPath="$PROJECT_DIR$/package/stock.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,31 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dataset_1.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/dataset_1.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="5702" column="17" lean-forward="false" selection-start-line="5702" selection-start-column="17" selection-end-line="5702" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stock.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/stock.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="error_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ml_error/error_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+            <state relative-caret-position="231">
+              <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
               <folding>
                 <element signature="e#14#32#0" expanded="true" />
               </folding>
@@ -55,34 +40,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tensorBoard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/for_simple_test/test/tensorBoard.py">
+      <file leaf-file-name="4.0.sqrt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ML_Bo/4/source/4.0.sqrt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stock_predict_1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stock_predict_1.py">
+      <file leaf-file-name="4.0.sqrt.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ML_Bo/4/prac/4.0.sqrt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="const.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/for_simple_test/test/const.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,6 +82,7 @@
       <find>random_normal</find>
       <find>Adam</find>
       <find>train_op</find>
+      <find>12</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,7 +111,9 @@
         <option value="$PROJECT_DIR$/ml_error/mysql-py.py" />
         <option value="$PROJECT_DIR$/for_simple_test/test/const.py" />
         <option value="$PROJECT_DIR$/package/stock.py" />
+        <option value="$PROJECT_DIR$/for_simple_test/test/fire_car/fire_car.py" />
         <option value="$PROJECT_DIR$/ml_error/error_test.py" />
+        <option value="$PROJECT_DIR$/ML_Bo/4/prac/4.0.sqrt.py" />
       </list>
     </option>
   </component>
@@ -181,8 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,6 +210,43 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="LSTM-MODEL" type="cbb8eebc:String" user="LSTM-MODEL" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="LSTM-MODEL" type="cbb8eebc:String" user="LSTM-MODEL" />
+              <item name="ML_Bo" type="cbb8eebc:String" user="ML_Bo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="LSTM-MODEL" type="cbb8eebc:String" user="LSTM-MODEL" />
+              <item name="ML_Bo" type="cbb8eebc:String" user="ML_Bo" />
+              <item name="4" type="cbb8eebc:String" user="4" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="LSTM-MODEL" type="cbb8eebc:String" user="LSTM-MODEL" />
+              <item name="ML_Bo" type="cbb8eebc:String" user="ML_Bo" />
+              <item name="4" type="cbb8eebc:String" user="4" />
+              <item name="prac" type="cbb8eebc:String" user="prac" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="LSTM-MODEL" type="cbb8eebc:String" user="LSTM-MODEL" />
+              <item name="ML_Bo" type="cbb8eebc:String" user="ML_Bo" />
+              <item name="4" type="cbb8eebc:String" user="4" />
+              <item name="source" type="cbb8eebc:String" user="source" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,17 +255,17 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\for_simple_test\test" />
-      <recent name="C:\Users\wutang\Desktop\ML_WORK\LSTM-MODEL\ml_error" />
-      <recent name="C:\Users\wutang\Desktop\ML_WORK\LSTM-MODEL\package" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\train" />
       <recent name="C:\Users\wutang\Desktop\ML_WORK\LSTM-MODEL\package" />
       <recent name="C:\Users\wutang\Desktop\ML_WORK\stock_predict_with_LSTM-master\package" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ML_Bo\4\source" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ML_Bo\4\prac" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\for_simple_test\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -306,6 +317,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="fire_car" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/for_simple_test/test/fire_car" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="stock_predict_with_LSTM-master" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/for_simple_test/test/fire_car/fire_car.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="mysql-py" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -337,24 +366,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="stock_predict_with_LSTM-master" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/package/stock.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="tensorChange" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/for_simple_test/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/for_simple_test/test/tensorChange.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -428,19 +439,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.tensorChange" />
-      <item index="1" class="java.lang.String" itemvalue="Python.mysql-py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.error_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.stock" />
-      <item index="4" class="java.lang.String" itemvalue="Python.const" />
+      <item index="0" class="java.lang.String" itemvalue="Python.mysql-py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.error_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.stock" />
+      <item index="3" class="java.lang.String" itemvalue="Python.const" />
+      <item index="4" class="java.lang.String" itemvalue="Python.fire_car" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.error_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.stock" />
-        <item index="2" class="java.lang.String" itemvalue="Python.const" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mysql-py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tensorChange" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fire_car" />
+        <item index="2" class="java.lang.String" itemvalue="Python.stock" />
+        <item index="3" class="java.lang.String" itemvalue="Python.const" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mysql-py" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513759381606</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="mysql读取">
+      <created>1513848720193</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513848720194</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -549,7 +567,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5105374" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27393076" sideWeight="0.4873551" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22708757" sideWeight="0.4873551" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.48946258" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18598525" sideWeight="0.5116279" order="2" side_tool="true" content_ui="tabs" />
@@ -648,27 +666,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package/stock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stock_predict_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package/stock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model_save1/modle.ckpt.index">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -763,7 +760,7 @@
     <entry file="file://C:/Anaconda3/Lib/site-packages/pandas/io/excel.py" />
     <entry file="file://$PROJECT_DIR$/package/dataset_1.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="153954">
           <caret line="5702" column="17" lean-forward="false" selection-start-line="5702" selection-start-column="17" selection-end-line="5702" selection-end-column="17" />
           <folding />
         </state>
@@ -850,25 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="17" column="10" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="17" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/for_simple_test/test/const.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stock_predict_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,33 +854,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="573" column="0" lean-forward="false" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package/stock.py">
+    <entry file="file://$PROJECT_DIR$/for_simple_test/test/fire_car/fire_car.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="594">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stock_predict_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/for_simple_test/test/tensorBoard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="540">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3996">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_simple_test/test/const.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_error/error_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="70" column="36" lean-forward="true" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+        <state relative-caret-position="231">
+          <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
           <folding>
             <element signature="e#14#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_Bo/4/source/4.0.sqrt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML_Bo/4/prac/4.0.sqrt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
