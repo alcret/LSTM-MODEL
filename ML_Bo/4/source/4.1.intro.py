@@ -205,16 +205,16 @@ if __name__ == "__main__":
     #  [30 31 32 33 34 35]
     #  [40 41 42 43 44 45]
     #  [50 51 52 53 54 55]]
-    # a = np.arange(0, 60, 10)    # 行向量
-    # print('a = ', a)
-    # b = a.reshape((-1, 1))      # 转换成列向量
-    # print(b)
+    a = np.arange(0, 60, 10)    # 行向量
+    print('a = ', a)
+    b = a.reshape((-1, 1))      # 转换成列向量
+    print(b)
     # c = np.arange(6)
     # print(c)
     # f = b + c   # 行 + 列
     # print(f)
     # # 合并上述代码：
-    # a = np.arange(0, 60, 10).reshape((-1, 1)) + np.arange(6)
+    a = np.arange(0, 60, 10).reshape((-1, 1)) + np.arange(6)
     # print(a)
     # # # 二维数组的切片
     # print(a[[0, 1, 2], [2, 3, 4]])

@@ -1,4 +1,4 @@
-#coding=utf-8
+#coding:utf-8
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -38,11 +38,11 @@ normalize_data= (data - np.mean(data)) / np.std(data)
 normalize_data = normalize_data[:,np.newaxis]
 
 #常数设置
-time_step = 20
+time_step = 20  #lstm展开的步数，也就是输入词的个数
 lr = 0.06
 input_size = 1
 output_size = 1
-batch_size = 60
+batch_size = 20  #批量大小
 rnn_unit = 10
 module_file = "train\\model.ckpt"
 
@@ -126,7 +126,7 @@ def prediction():
         prev_seq = train_x[-1]
         predict = []
         predicts = []
-        for i in range(100):
+        for i in range(1):
             next_seq = sess.run(pred, feed_dict={X: [prev_seq]})
             predict.append(next_seq[-1])
             prev_seq = np.vstack((prev_seq[1:], next_seq[-1]))  #每次得到最后一个时间步的预测结果，与之前的数据加在一起，形成新的测试样本
@@ -138,6 +138,7 @@ def prediction():
 
         for x in predict:
             predicts.append(x * np.std(data) + np.mean(data))
-
         print(predicts)
+        save =pd.DataFrame(predicts)
+        save.to_csv("test.csv")
 prediction()
