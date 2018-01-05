@@ -11,7 +11,7 @@ data = df.iloc[:,2:10].values
 rnn_unit = 10
 input_size = 7
 output_size = 1
-lr = 0.0006
+lr = 0.00025
 # print(data)
 
 # s数据集设置

@@ -93,7 +93,7 @@ def train_lstm():
     saver = tf.train.Saver(tf.global_variables(),name='train_saver')
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())   #初始化
-        for i in range(1):  # 迭代一百次训练
+        for i in range(100):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
