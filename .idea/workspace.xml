@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c19a4510-fba7-416e-8d55-3dcf485b37ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ml_error/error_test2/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ml_error/error_test2/dataset_2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ml_error/error_test2/error_test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/Add-Christmas-Hat/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ml_error/error_test.py" afterPath="$PROJECT_DIR$/ml_error/error_test.py" />
-      <change beforePath="$PROJECT_DIR$/ml_error/mysql-py.py" afterPath="$PROJECT_DIR$/ml_error/mysql-py.py" />
-      <change beforePath="$PROJECT_DIR$/model_save2/checkpoint" afterPath="$PROJECT_DIR$/model_save2/checkpoint" />
-      <change beforePath="$PROJECT_DIR$/model_save2/modle.ckpt.data-00000-of-00001" afterPath="$PROJECT_DIR$/model_save2/modle.ckpt.data-00000-of-00001" />
-      <change beforePath="$PROJECT_DIR$/model_save2/modle.ckpt.index" afterPath="$PROJECT_DIR$/model_save2/modle.ckpt.index" />
-      <change beforePath="$PROJECT_DIR$/model_save2/modle.ckpt.meta" afterPath="$PROJECT_DIR$/model_save2/modle.ckpt.meta" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +23,8 @@
       <file leaf-file-name="error_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ml_error/error_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="153" column="12" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+            <state relative-caret-position="405">
+              <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
               <folding>
                 <element signature="e#14#32#0" expanded="true" />
               </folding>
@@ -626,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515141692282</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="写入数据库">
+      <created>1515566177432</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1515566177432</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -732,7 +728,8 @@
     <MESSAGE value="mysql读取" />
     <MESSAGE value="python练习" />
     <MESSAGE value="写数据到csv文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="写数据到csv文件" />
+    <MESSAGE value="写入数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="写入数据库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -980,6 +977,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="6107" column="89" lean-forward="true" selection-start-line="6107" selection-start-column="8" selection-end-line="6107" selection-end-column="89" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_error/error_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="153" column="12" lean-forward="true" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+        <state relative-caret-position="405">
+          <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
           <folding>
             <element signature="e#14#32#0" expanded="true" />
           </folding>
