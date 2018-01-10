@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import pymysql
 from timeit import Timer
+import datetime
+import time
 
 def DBRead():
 # ISOTIMEFORMAT='%Y-%m-%d %X'
@@ -14,6 +16,8 @@ def DBRead():
         DB = pymysql.connect("172.16.1.159","hadoop","hadoop","dl_iot_bd_tianjin")
       # cursor = DB.cursor()
         df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127",con=DB)
+        # pd.read_sql_table()
+
         DB.close()
     except Exception: print('数据库读取失败')
 # t1 = Timer("DB","from __main__ import test1")
@@ -93,7 +97,7 @@ def train_lstm():
     saver = tf.train.Saver(tf.global_variables(),name='train_saver')
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())   #初始化
-        for i in range(100):  # 迭代一百次训练
+        for i in range(1):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
@@ -138,7 +142,22 @@ def prediction():
 
         for x in predict:
             predicts.append(x * np.std(data) + np.mean(data))
-        print(predicts)
+        print(predicts[0])
         save =pd.DataFrame(predicts)
         save.to_csv("test.csv")
+
+        # print(save)
+
+        tomorrow = datetime.datetime.today()+datetime.timedelta(days=1)  #获取明日的日期
+        tomorrow = tomorrow.strftime("%Y-%m-%d")
+        # print(tomorrow)
+        try:
+            DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin",charset='utf8')
+            cursor = DB.cursor()
+            effect = cursor.executemany("insert into bdf_ml_warningschedule(dl_orgid,dl_orgname,dl_errorfirerate,dl_arisetime) values(%s,%s,%s,%s)",[('127','天津富力中心',float(predicts[0]),tomorrow)])
+            DB.commit()
+            DB.close()
+        except Exception:
+            print('数据库读取失败')
+
 prediction()
