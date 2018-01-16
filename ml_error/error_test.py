@@ -6,7 +6,6 @@ import tensorflow as tf
 import pymysql
 from timeit import Timer
 import datetime
-import time
 
 
 def DBRead():
@@ -14,6 +13,7 @@ def DBRead():
     # times=time.strftime(ISOTIMEFORMAT, time.localtime())
     print('数据读取中')
     try:
+        pd.set_option('precision', 18)
         DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin")
         # cursor = DB.cursor()
         df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127", con=DB)
@@ -124,7 +124,7 @@ def train_lstm():
     writer.close()
 
 
-train_lstm()
+# train_lstm()
 
 
 def prediction():
@@ -172,4 +172,4 @@ def prediction():
             print('数据库读取失败')
 
 
-prediction()
+# prediction()

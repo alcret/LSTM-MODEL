@@ -4,13 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/package/ten_minits.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19a4510-fba7-416e-8d55-3dcf485b37ce" name="Default" comment="写入数据库">
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/crawler1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/seconda_crawler.py" />
+    <list default="true" id="c19a4510-fba7-416e-8d55-3dcf485b37ce" name="Default" comment="正则表达式">
+      <change beforePath="" afterPath="$PROJECT_DIR$/ml_error/error_test2.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ml_error/mysql_test.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ml_error/error_test.py" afterPath="$PROJECT_DIR$/ml_error/error_test.py" />
+      <change beforePath="$PROJECT_DIR$/ml_error/mysql-py.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/crawler1.py" afterPath="$PROJECT_DIR$/practice/crawler/crawler1.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="error_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="error_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ml_error/error_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="138" column="30" lean-forward="true" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+            <state relative-caret-position="811">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
                 <element signature="e#15#33#0" expanded="true" />
               </folding>
@@ -37,92 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crawler1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/crawler/crawler1.py">
+      <file leaf-file-name="error_test2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ml_error/error_test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-              <folding>
-                <element signature="e#15#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cookie.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/crawler/cookie.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="406">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql-py.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ml_error/mysql-py.py">
+      <file leaf-file-name="mysql_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ml_error/mysql_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="1080">
+              <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ml_error/test.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tensorBoard.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/for_simple_test/test/tensorBoard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding>
-                <element signature="e#14#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stock_predict_2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stock_predict_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-              <folding>
-                <element signature="e#15#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ml_error/error_test2/error_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1647">
-              <caret line="61" column="62" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
-              <folding>
-                <element signature="e#14#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataset_2.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package/dataset_2.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -152,6 +84,9 @@
       <find>12</find>
       <find>FileWriter</find>
       <find>money</find>
+      <find>name_scope</find>
+      <find>df</find>
+      <find>weights</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,12 +122,14 @@
         <option value="$PROJECT_DIR$/practice/Add-Christmas-Hat/add_hat.py" />
         <option value="$PROJECT_DIR$/stock_predict_2.py" />
         <option value="$PROJECT_DIR$/ml_error/error_test2/error_test.py" />
-        <option value="$PROJECT_DIR$/ml_error/mysql-py.py" />
         <option value="$PROJECT_DIR$/ml_error/test.csv" />
-        <option value="$PROJECT_DIR$/ml_error/error_test.py" />
         <option value="$PROJECT_DIR$/practice/crawler/first_crawler.py" />
         <option value="$PROJECT_DIR$/practice/crawler/seconda_crawler.py" />
         <option value="$PROJECT_DIR$/practice/crawler/crawler1.py" />
+        <option value="$PROJECT_DIR$/ml_error/mysql-py.py" />
+        <option value="$PROJECT_DIR$/ml_error/mysql_test.py" />
+        <option value="$PROJECT_DIR$/ml_error/error_test.py" />
+        <option value="$PROJECT_DIR$/ml_error/error_test2.py" />
       </list>
     </option>
   </component>
@@ -222,7 +159,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -235,7 +172,26 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LSTM-MODEL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LSTM-MODEL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LSTM-MODEL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LSTM-MODEL" type="462c0819:PsiDirectoryNode" />
+              <item name="ml_error" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -243,18 +199,19 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\error_test2" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\train" />
-      <recent name="C:\Users\wutang\Desktop\ML_WORK\LSTM-MODEL\package" />
-      <recent name="C:\Users\wutang\Desktop\ML_WORK\stock_predict_with_LSTM-master\package" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\practice" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ML_Bo\4\source" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ML_Bo\4\prac" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\error_test2" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\train" />
+      <recent name="C:\Users\wutang\Desktop\ML_WORK\LSTM-MODEL\package" />
+      <recent name="C:\Users\wutang\Desktop\ML_WORK\stock_predict_with_LSTM-master\package" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -269,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.error_test">
+  <component name="RunManager" selected="Python.error_test2">
     <configuration name="crawler1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,19 +263,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="first_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="error_test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/crawler" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ml_error" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/crawler/first_crawler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_error/error_test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -336,25 +293,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_error/mysql-py.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\mysql_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="seconda_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mysql_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/crawler" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ml_error" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/crawler/seconda_crawler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_error/mysql_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -429,17 +386,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.mysql-py" />
       <item index="1" class="java.lang.String" itemvalue="Python.error_test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.first_crawler" />
-      <item index="3" class="java.lang.String" itemvalue="Python.seconda_crawler" />
-      <item index="4" class="java.lang.String" itemvalue="Python.crawler1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.crawler1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mysql_test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.error_test2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.error_test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.crawler1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.seconda_crawler" />
-        <item index="3" class="java.lang.String" itemvalue="Python.first_crawler" />
-        <item index="4" class="java.lang.String" itemvalue="Python.mysql-py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.error_test2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.error_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mysql_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mysql-py" />
+        <item index="4" class="java.lang.String" itemvalue="Python.crawler1" />
       </list>
     </recent_temporary>
   </component>
@@ -583,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515652174372</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="正则表达式">
+      <created>1516008639273</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1516008639273</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -599,12 +563,12 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083333" sideWeight="0.4725051" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22083333" sideWeight="0.4725051" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34114054" sideWeight="0.51770836" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3778004" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33604887" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.48946258" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083333" sideWeight="0.5274949" order="2" side_tool="true" content_ui="tabs" />
@@ -690,7 +654,8 @@
     <MESSAGE value="python练习" />
     <MESSAGE value="写数据到csv文件" />
     <MESSAGE value="写入数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="写入数据库" />
+    <MESSAGE value="正则表达式" />
+    <option name="LAST_COMMIT_MESSAGE" value="正则表达式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -706,21 +671,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Anaconda3/Lib/site-packages/pandas/io/excel.py" />
-    <entry file="file://$PROJECT_DIR$/package/dataset_1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153954">
-          <caret line="5702" column="17" lean-forward="false" selection-start-line="5702" selection-start-column="17" selection-end-line="5702" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_error/bdf_ml_warningschedule.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/training/basic_session_run_hooks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -767,13 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="573" column="0" lean-forward="false" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stock_predict_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -943,38 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_simple_test/test/tensorBoard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pymysql/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_error/mysql-py.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml_error/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,6 +921,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package/dataset_2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stock_predict_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+          <folding>
+            <element signature="e#15#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_simple_test/test/tensorBoard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml_error/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/practice/crawler/cookie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1016,49 +967,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practice/crawler/crawler1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        <state relative-caret-position="1333">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
           <folding>
             <element signature="e#15#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stock_predict_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/io/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="377" column="13" lean-forward="false" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ml_error/error_test2/error_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1647">
-          <caret line="61" column="62" lean-forward="true" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
+          <caret line="61" column="62" lean-forward="false" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
           <folding>
-            <element signature="e#14#37#0" expanded="true" />
+            <element signature="e#14#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stock_predict_2.py">
+    <entry file="file://$PROJECT_DIR$/ml_error/mysql_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+        <state relative-caret-position="1080">
+          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding>
-            <element signature="e#15#34#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package/dataset_2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ml_error/error_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="138" column="30" lean-forward="true" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+        <state relative-caret-position="811">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding>
             <element signature="e#15#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml_error/error_test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

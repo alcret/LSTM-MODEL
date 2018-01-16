@@ -50,7 +50,7 @@ import re
 #=======================抓取糗事百科
 page = 1
 url = 'http://www.qiushibaike.com/hot/page/'+ str(page)
-pattern = re.compile('.*?',re.S)
+pattern = re.compile('<div.*?author.*?">.*?<a.*?<img.*?(alt=.*?)>',re.S)
 user_agent = "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)"
 handers = {'User-Agent':user_agent}
 try:
@@ -62,7 +62,7 @@ try:
     print '==========='
     # print(content)
     for item in items:
-        print item[0], item[1], item[2], item[3], item[4], 'hello'
+        print item
 except urllib2.URLError,e:
     if hasattr(e,"code"):
         print e.code
@@ -70,4 +70,4 @@ except urllib2.URLError,e:
         print e.reason
 
 
-
+#1作者2时间3图片4内容5赞个数
