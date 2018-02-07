@@ -33,16 +33,12 @@ def DBCreate():
         df = pd.read_sql(sql1,con=DB)
         # print(df)
         data = []
-
         for i in df['dl_orgid']:
             # print(i)
             pd.set_option('precision',18)
-            sql2 = "select dl_orgid,dl_orgname,dl_arisetime,dl_errorfirerate from bgf_groupbywarningschedule where dl_orgid="+str(i)
+            sql2 = "select dl_orgid,dl_orgname,dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid="+str(i)
             # print(sql2)
             dat = pd.read_sql(sql2,con=DB)
-            NONE_dl_orgid = (dat['dl_errorfirerate'].isnull()) | (
-                dat['dl_errorfirerate'].apply(lambda x: str(x).isspace()))
-            dat = dat[~NONE_dl_orgid]
             # dat.round(100)
 
             data.append(dat)
@@ -61,9 +57,8 @@ def DBCreate():
 
     # for i in range(len(dat)):
     #     print(i)
-
     return data
 
 
 if __name__ == '__main__':
-    print(DBCreate())
+    DBCreate()

@@ -49,7 +49,14 @@ datas = DBCreate()
 
 def initials(df):
     # 全局变量定义
-    global time_step, biases, Y, X, train_x, train_y, normalize_data, data,lr,input_size,output_size,batch_size,rnn_unit,module_file,weights
+    global time_step, biases, Y, X, train_x, train_y, normalize_data, data
+    global lr
+    global input_size
+    global output_size
+    global batch_size
+    global rnn_unit
+    global module_file
+    global weights
 
     data = np.array(df['dl_errorfirerate'])
     data = data[::-1]
@@ -200,5 +207,5 @@ if __name__ == '__main__':
     try:
         for i in range(len(datas)):
             rnn(i, datas[i])
-    except Exception as e:
+    except Exception  as e:
         print(e)

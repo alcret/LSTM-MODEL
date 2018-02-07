@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import pymysql
 import datetime
+from timeit import Timer
 
 
 
@@ -20,9 +21,12 @@ def DBCreate():
         for i in df['dl_orgid']:
             # print(i)
             pd.set_option('precision',18)
-            sql2 = "select dl_orgid,dl_orgname,dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid="+str(i)
+            sql2 = "select dl_orgid,dl_orgname,dl_arisetime,dl_errorfirerate from bgf_groupbywarningschedule where dl_orgid="+str(i)
             # print(sql2)
             dat = pd.read_sql(sql2,con=DB)
+            NONE_dl_orgid = (dat['dl_errorfirerate'].isnull()) | (
+                    dat['dl_errorfirerate'].apply(lambda x: str(x).isspace()))
+            dat = dat[~NONE_dl_orgid]
             # dat.round(100)
 
             data.append(dat)
@@ -49,7 +53,14 @@ datas = DBCreate()
 
 def initials(df):
     # 全局变量定义
-    global time_step, biases, Y, X, train_x, train_y, normalize_data, data,lr,input_size,output_size,batch_size,rnn_unit,module_file,weights
+    global time_step, biases, Y, X, train_x, train_y, normalize_data, data
+    global lr
+    global input_size
+    global output_size
+    global batch_size
+    global rnn_unit
+    global module_file
+    global weights
 
     data = np.array(df['dl_errorfirerate'])
     data = data[::-1]
@@ -116,7 +127,7 @@ def train_lstm(names):
     saver = tf.train.Saver(tf.global_variables(), name='train_saver')
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())  # 初始化
-        for i in range(10000):  # 迭代一百次训练
+        for i in range(1):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
@@ -171,6 +182,7 @@ def prediction(names):
 
 
 def saves(i, predicts):
+    t1 = Timer("DBCreate()","from __main__ import DBCreate")
     tomorrow = datetime.datetime.today() + datetime.timedelta(days=1)  # 获取明日的日期
     tomorrow = tomorrow.strftime("%Y-%m-%d")
     # print(tomorrow)
@@ -178,12 +190,12 @@ def saves(i, predicts):
         DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin", charset='utf8')
         cursor = DB.cursor()
         effect = cursor.executemany(
-            "insert into bdf_ml_warningschedule(dl_orgid,dl_orgname,dl_errorfirerate,dl_arisetime) values(%s,%s,%s,%s)",
-            [(int(datas[i]['dl_orgid'][0]), str(datas[i]['dl_orgname'][0]), float(predicts[0]), tomorrow)])
+            "insert into bdf_ml_warningschedule(dl_orgid,dl_orgname,dl_errorfirerate,dl_arisetime,dl_spendtime) values(%s,%s,%s,%s,%s)",
+            [(int(datas[i]['dl_orgid'][0]), str(datas[i]['dl_orgname'][0]), float(predicts[0]), tomorrow,float(t1.timeit(0)))])
         DB.commit()
         DB.close()
-    except Exception:
-        print('数据库读取失败')
+    except Exception as e :
+        print('数据库读取失败',e)
 
 
 def rnn(i, datas):
@@ -200,5 +212,5 @@ if __name__ == '__main__':
     try:
         for i in range(len(datas)):
             rnn(i, datas[i])
-    except Exception as e:
+    except Exception  as e:
         print(e)

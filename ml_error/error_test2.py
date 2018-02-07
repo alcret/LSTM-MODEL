@@ -15,44 +15,39 @@ import multiprocessing
 import queue
 import threading
 from multiprocessing import Process
-from  multiprocessing import Pool
+from multiprocessing import Pool
 
 datas = test.DBCreate()
 
 
+# =================================================以上是测试数据
+def DBRead():
+    # ISOTIMEFORMAT='%Y-%m-%d %X'
+    # times=time.strftime(ISOTIMEFORMAT, time.localtime())
+    print('数据读取中')
+    try:
+        pd.set_option('precision', 18)
+        DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin")
+        # cursor = DB.cursor()
+        df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127", con=DB)
+        # pd.read_sql_table()
 
-
-
-#=================================================以上是测试数据
-# def DBRead():
-#     # ISOTIMEFORMAT='%Y-%m-%d %X'
-#     # times=time.strftime(ISOTIMEFORMAT, time.localtime())
-#     print('数据读取中')
-#     try:
-#         pd.set_option('precision', 18)
-#         DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin")
-#         # cursor = DB.cursor()
-#         df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127", con=DB)
-#         # pd.read_sql_table()
-#
-#         DB.close()
-#     except Exception:
-#         print('数据库读取失败')
-#     # t1 = Timer("DB","from __main__ import test1")
-#     # print(t1)
-#     return df;
+        DB.close()
+    except Exception:
+        print('数据库读取失败')
+    # t1 = Timer("DB","from __main__ import test1")
+    # print(t1)
+    return df;
 ##=================================
 # def Process_data(df):
 #     data = np.array(df['dl_errorfirerate'])
 #     data = data[::-1]
 
 
-
-
 ##=================================
-# df = DBRead()
-# t1 = Timer("DBRead()", "from __main__ import DBRead")
-# print('读取数据花费时间：', t1.timeit(0))
+df = DBRead()
+t1 = Timer("DBRead()", "from __main__ import DBRead")
+print('读取数据花费时间：', t1.timeit(0))
 
 
 # plt.figure()
@@ -63,8 +58,8 @@ datas = test.DBCreate()
 # plt.show()
 
 def initials(df):
-    #全局变量定义
-    global time_step,biases,Y,X,train_x,train_y,normalize_data,data
+    # 全局变量定义
+    global time_step, biases, Y, X, train_x, train_y, normalize_data, data
     global lr
     global input_size
     global output_size
@@ -73,9 +68,14 @@ def initials(df):
     global module_file
     global weights
 
+
     data = np.array(df['dl_errorfirerate'])
+    # print(type(data))
+    # data.choose('nan',float(0.0))
     data = data[::-1]
+    print(data)
     normalize_data = (data - np.mean(data)) / np.std(data)
+    # print(np.re)
     normalize_data = normalize_data[:, np.newaxis]
     # 常数设置
     time_step = 20  # lstm展开的步数，也就是输入词的个数
@@ -118,7 +118,7 @@ def lstm(batch):
     cell = tf.nn.rnn_cell.BasicLSTMCell(rnn_unit, 1)
     init_state = cell.zero_state(batch, dtype=tf.float32)  # 将初始的值放到cell中
     print("==================================")
-    output_rnn, final_state = tf.nn.dynamic_rnn(cell, input_rnn,initial_state=init_state,
+    output_rnn, final_state = tf.nn.dynamic_rnn(cell, input_rnn, initial_state=init_state,
                                                 dtype=tf.float32)  # 创建由RNNCELL指定的循环神经网络cell
     output = tf.reshape(output_rnn, [-1, rnn_unit], name='output')  # 输出层变形为二维张量（降维）
     w_out = weights['out']  # 最后一层权重
@@ -131,7 +131,7 @@ def train_lstm(names):
     # tf.reset_default_graph()
     global batch_size  # 为函数外的变量赋值需要global关键字
     with tf.variable_scope(str(names)) as scope:
-         pred, _ = lstm(batch_size)
+        pred, _ = lstm(batch_size)
     loss = tf.reduce_mean(tf.square(tf.reshape(pred, [-1]) - tf.reshape(Y, [-1])), name='loss')  # 代价函数,梯度下降法，类似欧几里德距离算法
     train_op = tf.train.AdamOptimizer(lr, name='train_op').minimize(
         loss)  # 此函数是Adam优化算法：是一个寻找全局最优点的优化算法，引入了二次方梯度校正。相比于基础SGD算法，1.不容易陷于局部优点。2.速度更快
@@ -192,27 +192,28 @@ def prediction(names):
         # print(save)
         return predicts
 
-def saves(i,predicts):
-        tomorrow = datetime.datetime.today() + datetime.timedelta(days=1)  # 获取明日的日期
-        tomorrow = tomorrow.strftime("%Y-%m-%d")
-        # print(tomorrow)
-        try:
-            DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin", charset='utf8')
-            cursor = DB.cursor()
-            effect = cursor.executemany(
-                "insert into bdf_ml_warningschedule(dl_orgid,dl_orgname,dl_errorfirerate,dl_arisetime) values(%s,%s,%s,%s)",
-                [(int(datas[i]['dl_orgid'][0]), '天津富力中心', float(predicts[0]), tomorrow)])
-            DB.commit()
-            DB.close()
-        except Exception:
-            print('数据库读取失败')
 
-def rnn(i,datas):
+def saves(i, predicts):
+    tomorrow = datetime.datetime.today() + datetime.timedelta(days=1)  # 获取明日的日期
+    tomorrow = tomorrow.strftime("%Y-%m-%d")
+    # print(tomorrow)
+    try:
+        DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin", charset='utf8')
+        cursor = DB.cursor()
+        effect = cursor.executemany(
+            "insert into bdf_ml_warningschedule(dl_orgid,dl_orgname,dl_errorfirerate,dl_arisetime) values(%s,%s,%s,%s)",
+            [(int(datas[i]['dl_orgid'][0]), str(datas[i]['dl_orgname'][0]), float(predicts[0]), tomorrow)])
+        DB.commit()
+        DB.close()
+    except Exception:
+        print('数据库读取失败')
+
+
+def rnn(i, datas):
     initials(datas)
     train_lstm(i)
-    # a = prediction()
-    # saves(i,a)
-
+    a = prediction(i)
+    saves(i,a)
 
 
 # prediction()
@@ -220,8 +221,11 @@ if __name__ == '__main__':
     # print(datas[0])
     # rnn(0,datas[0])
     try:
+        # NONE_dl_orgid = (datas['dl_errorfirerate'].isnull()) | (datas['dl_errorfirerate'].apply(lambda x: str(x).isspace()))
+        # print(datas[~NONE_dl_orgid])
+
         for i in range(len(datas)):
-            rnn(i,datas[i])
+            rnn(i, datas[i])
     except Exception  as e:
         print(e)
 
@@ -235,19 +239,12 @@ if __name__ == '__main__':
     #     # rnn(datas[i])
     #     pool.close()
 
-
-
-
-
     # message = queue.Queue(len(datas))
     # for i in range(8):
     #     t = threading.Thread(target=initials(datas[i]),args=(i,))
     #     t = threading.Thread(target=train_lstm(),args=(i,))
     #     t = threading.Thread(target=prediction(),args=(i,))
     #     t.start()
-
-
-
 
     # for i in range(len(datas)):
     # #     data = np.array(datas[6]['dl_orgid'])

@@ -4,52 +4,69 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import pymysql
+from timeit import Timer
 import datetime
+import time
+
+from tensorflow.python.ops.rnn_cell_impl import BasicLSTMCell
+
+from ml_error import mysql_test as test
+import multiprocessing
+import queue
+import threading
+from multiprocessing import Process
+from multiprocessing import Pool
+
+datas = test.DBCreate()
 
 
-
-sql1 = "select distinct(dl_orgid) from bgf_groupbywarningschedule"
-def DBCreate():
-    print('读取中。。。。。。。。。')
-    try:
-        # colums = []
-        DB = pymysql.connect("172.16.1.159","hadoop","hadoop","dl_iot_bd_tianjin",charset='utf8')
-        df = pd.read_sql(sql1,con=DB)
-        # print(df)
-        data = []
-        for i in df['dl_orgid']:
-            # print(i)
-            pd.set_option('precision',18)
-            sql2 = "select dl_orgid,dl_orgname,dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid="+str(i)
-            # print(sql2)
-            dat = pd.read_sql(sql2,con=DB)
-            # dat.round(100)
-
-            data.append(dat)
-            # print(data)
-            # print(data.shape)
-        # 0.009009009009009009
-        print('读取结束++++++++++++++')
-        DB.close()
-    except Exception:
-        print("读取失败")
-
-    # dat['dl_errorfirerate'].round(12)
-    # print(dat)
-    # print(len(dat))
-    # print(type(dat))
-
-    # for i in range(len(dat)):
-    #     print(i)
-    return data
-
-datas = DBCreate()
+# =================================================以上是测试数据
+# def DBRead():
+#     # ISOTIMEFORMAT='%Y-%m-%d %X'
+#     # times=time.strftime(ISOTIMEFORMAT, time.localtime())
+#     print('数据读取中')
+#     try:
+#         pd.set_option('precision', 18)
+#         DB = pymysql.connect("172.16.1.159", "hadoop", "hadoop", "dl_iot_bd_tianjin")
+#         # cursor = DB.cursor()
+#         df = pd.read_sql("select dl_arisetime,dl_errorfirerate from bdf_ml_warningschedule where dl_orgid=127", con=DB)
+#         # pd.read_sql_table()
+#
+#         DB.close()
+#     except Exception:
+#         print('数据库读取失败')
+#     # t1 = Timer("DB","from __main__ import test1")
+#     # print(t1)
+#     return df;
+##=================================
+# def Process_data(df):
+#     data = np.array(df['dl_errorfirerate'])
+#     data = data[::-1]
 
 
+##=================================
+# df = DBRead()
+# t1 = Timer("DBRead()", "from __main__ import DBRead")
+# print('读取数据花费时间：', t1.timeit(0))
+
+
+# plt.figure()
+# plt.rcParams['font.sans-serif']=['SimHei']
+# plt.rcParams['axes.unicode_minus']=False
+# plt.title('误报比率')
+# plt.plot(data)
+# plt.show()
 
 def initials(df):
     # 全局变量定义
-    global time_step, biases, Y, X, train_x, train_y, normalize_data, data,lr,input_size,output_size,batch_size,rnn_unit,module_file,weights
+    global time_step, biases, Y, X, train_x, train_y, normalize_data, data
+    global lr
+    global input_size
+    global output_size
+    global batch_size
+    global rnn_unit
+    global module_file
+    global weights
 
     data = np.array(df['dl_errorfirerate'])
     data = data[::-1]
@@ -62,7 +79,7 @@ def initials(df):
     output_size = 1
     batch_size = 20  # 批量大小
     rnn_unit = 10
-    module_file = "/home/dev/ml_error/train/model.ckpt"
+    module_file = "train\\model.ckpt"
 
     train_x, train_y = [], []
 
@@ -116,7 +133,7 @@ def train_lstm(names):
     saver = tf.train.Saver(tf.global_variables(), name='train_saver')
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())  # 初始化
-        for i in range(10000):  # 迭代一百次训练
+        for i in range(1):  # 迭代一百次训练
             step = 0
             start = 0
             end = start + batch_size
@@ -129,13 +146,14 @@ def train_lstm(names):
                     print("保存", saver.save(sess, module_file))
                 step += 1
         writer = tf.summary.FileWriter(
-            "/home/dev/ml_error/train",
+            "C:/Users/wilbert/PycharmProjects/LSTM-MODEL/for_simple_test/test/path/to/log",
             tf.get_default_graph())
         print("训练结束")
 
     writer.close()
 
 
+# train_lstm()
 
 
 def prediction(names):
@@ -155,16 +173,16 @@ def prediction(names):
             predict.append(next_seq[-1])
             prev_seq = np.vstack((prev_seq[1:], next_seq[-1]))  # 每次得到最后一个时间步的预测结果，与之前的数据加在一起，形成新的测试样本
 
-        # plt.figure()
-        # plt.plot(list(range(len(normalize_data))), normalize_data, color='r')
-        # plt.plot(list(range(len(normalize_data), len(normalize_data) + len(predict))), predict, color='b')
+        plt.figure()
+        plt.plot(list(range(len(normalize_data))), normalize_data, color='r')
+        plt.plot(list(range(len(normalize_data), len(normalize_data) + len(predict))), predict, color='b')
         # plt.show()
 
         for x in predict:
             predicts.append(x * np.std(data) + np.mean(data))
         print(predicts[0])
         save = pd.DataFrame(predicts)
-        save.to_csv("/home/dev/ml_error/train/test.csv")
+        save.to_csv("test.csv")
 
         # print(save)
         return predicts
@@ -200,5 +218,30 @@ if __name__ == '__main__':
     try:
         for i in range(len(datas)):
             rnn(i, datas[i])
-    except Exception as e:
+    except Exception  as e:
         print(e)
+
+    # rnn(datas[0])
+    # rnn(datas[0])
+    # pool = Pool(2)
+    # for i in range(len(datas)):
+    #     # rnn(datas[i])
+    #     # pool.apply_async(func=initials(datas[i]),callback=train_lstm())
+    #     pool.apply(func=rnn(datas[i]))
+    #     # rnn(datas[i])
+    #     pool.close()
+
+    # message = queue.Queue(len(datas))
+    # for i in range(8):
+    #     t = threading.Thread(target=initials(datas[i]),args=(i,))
+    #     t = threading.Thread(target=train_lstm(),args=(i,))
+    #     t = threading.Thread(target=prediction(),args=(i,))
+    #     t.start()
+
+    # for i in range(len(datas)):
+    # #     data = np.array(datas[6]['dl_orgid'])
+    # #     print(data)
+    #     initials(datas[0])
+    #     print(datas[0])
+    #     train_lstm()
+    #     # prediction()
