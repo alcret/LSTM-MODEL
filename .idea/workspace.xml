@@ -4,26 +4,23 @@
     <bookmark url="file://$PROJECT_DIR$/package/ten_minits.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19a4510-fba7-416e-8d55-3dcf485b37ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/MySQLForML.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/LSTM.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/MySQLForML.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/MySQLforTest.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/Not_Change.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/change.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/error_test2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/error_test3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new_produce/mysql_test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package/error_test3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/jingtong/JT_Crawler.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/jingtong/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/stock_predict_with_LSTM-master.iml" afterPath="$PROJECT_DIR$/.idea/stock_predict_with_LSTM-master.iml" />
+    <list default="true" id="c19a4510-fba7-416e-8d55-3dcf485b37ce" name="Default" comment="利器">
+      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/crawler_book/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/crawler_book/first_crawler.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/pythonsite/3.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/pythonsite/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/practice/crawler/pythonsite/bian.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ml_error/error_test2.py" afterPath="$PROJECT_DIR$/ml_error/error_test2.py" />
-      <change beforePath="$PROJECT_DIR$/ml_error/error_test3.py" afterPath="$PROJECT_DIR$/ml_error/error_test3.py" />
-      <change beforePath="$PROJECT_DIR$/ml_error/mysql_test.py" afterPath="$PROJECT_DIR$/ml_error/mysql_test.py" />
-      <change beforePath="$PROJECT_DIR$/practice/crawler/test.py" afterPath="$PROJECT_DIR$/practice/crawler/test.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/Tool.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/Tool.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/crawler1.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/crawler1.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/first_crawler.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/first_crawler.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/jingtong/JT_Crawler.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/jingtong/__init__.py" afterPath="$PROJECT_DIR$/practice/crawler/crawler_book/Douban.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/seconda_crawler.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/seconda_crawler.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/test.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/test.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/tieba_crawler.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/tieba_crawler.py" />
+      <change beforePath="$PROJECT_DIR$/practice/crawler/zhi_crawler.py" afterPath="$PROJECT_DIR$/practice/crawler/first_crawler/zhi_crawler.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,13 +57,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JT_Crawler.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice/crawler/jingtong/JT_Crawler.py">
+      <file leaf-file-name="first_crawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/crawler/crawler_book/first_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+            <state relative-caret-position="810">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Douban.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practice/crawler/crawler_book/Douban.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#25#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,10 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/test_TF/hello.py" />
-        <option value="$PROJECT_DIR$/test/test_TF/hello2.py" />
-        <option value="$PROJECT_DIR$/test/test_TF/hello3.py" />
-        <option value="$PROJECT_DIR$/for_simple_test/test/area.py" />
         <option value="$PROJECT_DIR$/test/__init__.py" />
         <option value="$PROJECT_DIR$/ReadMe.md" />
         <option value="$PROJECT_DIR$/package/prediction/tensorflow.py" />
@@ -196,12 +199,16 @@
         <option value="$PROJECT_DIR$/new_produce/LSTM.py" />
         <option value="$PROJECT_DIR$/package/error_test3.py" />
         <option value="$PROJECT_DIR$/practice/crawler/jingtong/JT_Crawler.py" />
+        <option value="$PROJECT_DIR$/practice/crawler/pythonsite/3.py" />
+        <option value="$PROJECT_DIR$/practice/crawler/pythonsite/bian.py" />
+        <option value="$PROJECT_DIR$/practice/crawler/crawler_book/first_crawler.py" />
+        <option value="$PROJECT_DIR$/practice/crawler/crawler_book/Douban.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="231" />
-    <option name="y" value="102" />
+    <option name="x" value="-3" />
+    <option name="y" value="281" />
     <option name="width" value="1933" />
     <option name="height" value="872" />
   </component>
@@ -269,7 +276,7 @@
               <item name="LSTM-MODEL" type="462c0819:PsiDirectoryNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="jingtong" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_book" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,19 +300,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\practice\crawler\first_crawler" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\practice" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\air_stations" />
+      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\airline_ticket" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\package" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\new_produce" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\error_test2" />
       <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\ml_error\train" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\practice" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\air_stations" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\airline_ticket" />
-      <recent name="C:\Users\wilbert\PycharmProjects\LSTM-MODEL\practice\airline_ticket" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -320,7 +327,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.JT_Crawler">
+  <component name="RunManager" selected="Python.first_crawler">
+    <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/crawler/pythonsite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="stock_predict_with_LSTM-master" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/crawler/pythonsite/3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="JT_Crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,55 +364,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="LSTM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bian" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/new_produce" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/crawler/pythonsite" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new_produce/LSTM.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="error_test2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ml_error" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml_error/error_test2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="error_test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/new_produce" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="stock_predict_with_LSTM-master" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new_produce/error_test2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/crawler/pythonsite/bian.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,6 +395,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="stock_predict_with_LSTM-master" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/package/error_test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="first_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice/crawler/crawler_book" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="stock_predict_with_LSTM-master" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice/crawler/crawler_book/first_crawler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -478,19 +485,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.LSTM" />
-      <item index="1" class="java.lang.String" itemvalue="Python.error_test2 (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.error_test2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.error_test3" />
-      <item index="4" class="java.lang.String" itemvalue="Python.JT_Crawler" />
+      <item index="0" class="java.lang.String" itemvalue="Python.error_test3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.JT_Crawler" />
+      <item index="2" class="java.lang.String" itemvalue="Python.3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.bian" />
+      <item index="4" class="java.lang.String" itemvalue="Python.first_crawler" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.JT_Crawler" />
-        <item index="1" class="java.lang.String" itemvalue="Python.error_test3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.LSTM" />
-        <item index="3" class="java.lang.String" itemvalue="Python.error_test2 (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.error_test2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.first_crawler" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bian" />
+        <item index="2" class="java.lang.String" itemvalue="Python.3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.JT_Crawler" />
+        <item index="4" class="java.lang.String" itemvalue="Python.error_test3" />
       </list>
     </recent_temporary>
   </component>
@@ -655,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516263605905</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="利器">
+      <created>1517987515161</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1517987515161</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -674,27 +688,28 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.146875" sideWeight="0.4725051" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34114054" sideWeight="0.51770836" order="15" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.305499" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3604888" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.48946258" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083333" sideWeight="0.5274949" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49789253" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="896" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -771,6 +786,9 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -783,48 +801,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package/ten_minits.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/seconda_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/cookielib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="1768" column="0" lean-forward="false" selection-start-line="1768" selection-start-column="0" selection-end-line="1768" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package/dataset_2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stock_predict_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/for_simple_test/test/tensorBoard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ml_error/test.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -832,7 +808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/cookie.txt">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/cookie.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -882,35 +858,35 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practice/crawler/百合服收两个+7，3S星座火手+6也行~.txt" />
-    <entry file="file://$PROJECT_DIR$/practice/crawler/贴吧.txt">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/贴吧.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/纯原创我心中的NBA2014-2015赛季现役50大.txt">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/纯原创我心中的NBA2014-2015赛季现役50大.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/tieba_crawler.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/tieba_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-151">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/Tool.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/Tool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/zhi_crawler.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/zhi_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
@@ -952,28 +928,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/crawler_tool.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/crawler_tool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/crawler1.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/crawler1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/crawler_zhi.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/crawler_zhi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="62" column="19" lean-forward="false" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/first_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
@@ -1015,7 +991,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/test.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/first_crawler/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
@@ -1129,6 +1105,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/practice/crawler/jingtong/JT_Crawler.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/urllib/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="148" column="32" lean-forward="true" selection-start-line="144" selection-start-column="16" selection-end-line="148" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/crawler/pythonsite/bian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/crawler/pythonsite/3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package/error_test3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2940">
@@ -1137,12 +1142,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/crawler/jingtong/JT_Crawler.py">
+    <entry file="file://$PROJECT_DIR$/practice/crawler/crawler_book/first_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        <state relative-caret-position="810">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/crawler/crawler_book/Douban.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
