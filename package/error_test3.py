@@ -97,7 +97,6 @@ def initials(df):
             'out': tf.Variable(tf.constant(0.1, shape=[1, ]), name='biases_out')
         }
 
-
 def lstm(batch):
     w_in = weights['in']  # 选取输入的权重
     b_in = biases['in']  # 选取输入的偏执量
